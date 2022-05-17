@@ -124,7 +124,7 @@ function DiveTypeInfo() {
 
       <h4 className="my-3">{diveSelectedHeading.length>0 ? diveSelectedHeading : ""}</h4>
 
-      <div className="row g-3">
+      <div className="row g-2">
           {selectedDives.map((dive) => (<SelectedDive key={dive.num} dive={dive} />))}
       </div>
     </div>

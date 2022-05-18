@@ -65,61 +65,43 @@ function DiveTypeInfo() {
     <div className=' container text-center p-3'>
       <h1>Dive Type Info</h1>
 
-      <div className="d-sm-flex align-items-center justify-content-between">
-        <label style={radioStyle}>
-          <input 
-            type="radio" 
-            name="diveType"  
-            value="fresh"
-            onClick={onChange}
-          /> 
-          Fresh
-        </label>
-        <label style={radioStyle}>
-          <input 
-            type="radio" 
-            name="diveType"  
-            value="salt"
-            onClick={onChange}
-          /> 
-          Salt
-        </label>
-        <label style={radioStyle}>
-          <input 
-            type="radio" 
-            name="diveType"  
-            value="shore"
-            onClick={onChange}
-          /> 
-          Shore
-        </label>
-        <label style={radioStyle}>
-          <input 
-            type="radio" 
-            name="diveType"  
-            value="boat"
-            onClick={onChange}
-          /> 
-          Boat
-        </label>
-        <label style={radioStyle}>
-          <input 
-            type="radio" 
-            name="diveType"  
-            value="night"
-            onClick={onChange}
-          /> 
-          Night
-        </label>
-        <label style={radioStyle}>
-          <input 
-            type="radio" 
-            name="diveType"  
-            value="deep"
-            onClick={onChange}
-          /> 
-          Deep
-        </label>
+      <div className="d-sm-flex align-items-center justify-content-sm-between">
+        <div className="form-check form-check-inline">
+          <input className="form-check-input" type="radio" name="diveType" id="freshRadio" value="fresh" onClick={onChange} />
+          <label className="form-check-label" for="freshRadio">
+            Fresh
+          </label>
+        </div>
+        <div className="form-check form-check-inline">
+          <input className="form-check-input" type="radio" name="diveType" id="saltRadio" value="salt" onClick={onChange} />
+          <label className="form-check-label" for="saltRadio">
+            Salt
+          </label>
+        </div>
+        <div className="form-check form-check-inline">
+          <input className="form-check-input" type="radio" name="diveType" id="shoreRadio" value="shore" onClick={onChange} />
+          <label className="form-check-label" for="shoreRadio">
+            Shore
+          </label>
+        </div>
+        <div className="form-check form-check-inline">
+          <input className="form-check-input" type="radio" name="diveType" id="boatRadio" value="boat" onClick={onChange} />
+          <label className="form-check-label" for="boatRadio">
+            Boat
+          </label>
+        </div>
+        <div className="form-check form-check-inline">
+          <input className="form-check-input" type="radio" name="diveType" id="nightRadio" value="night" onClick={onChange} />
+          <label className="form-check-label" for="nightRadio">
+            Night
+          </label>
+        </div>
+        <div className="form-check form-check-inline">
+          <input className="form-check-input" type="radio" name="diveType" id="deepRadio" value="deep" onClick={onChange} />
+          <label className="form-check-label" for="deepRadio">
+            Deep
+          </label>
+        </div>
       </div>
 
       <h4 className="my-3">{diveSelectedHeading.length>0 ? diveSelectedHeading : ""}</h4>
